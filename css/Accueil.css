@@ -39,7 +39,7 @@ body{
   background-repeat: no-repeat;
   background-origin: border-box;
   background-size: 100%;
-  background-image: url(/image/DOS\ FENETRe.png);
+  background-image: url(image/DOS\ FENETRe.png);
 }
 
 body::before{

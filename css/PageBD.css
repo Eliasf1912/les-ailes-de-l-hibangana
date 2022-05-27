@@ -40,7 +40,7 @@ body{
 /* navigation */
 
 header{
-    background-image: url(/image/fond\ header.PNG);
+    background-image: url(image/fond\ header.PNG);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -114,7 +114,7 @@ footer{
     color: var(--blanc);
     /* border: solid var(--rouge_pale) 5px; */
     /* border-radius: 15px; */
-    background-image: url(/image/fond\ header.PNG);
+    background-image: url(image/fond\ header.PNG);
     /* width: 500px; */
 }
 

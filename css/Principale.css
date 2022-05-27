@@ -38,7 +38,7 @@ body{
 /* navigation */
 
 header{
-    background-image: url(/image/fond\ header.PNG);
+    background-image: url(image/fond\ header.PNG);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -222,7 +222,7 @@ nav ul li a:hover{
 footer{
     display: flex;
     justify-content: start;
-    background-image: url(/image/fond\ footer.PNG);
+    background-image: url(image/fond\ footer.PNG);
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--blanc);
