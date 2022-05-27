@@ -1,0 +1,181 @@
+/* lien pour la police  */
+
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic:wght@400;700&display=swap');
+
+/* ------------------------------------------------------------- */
+
+/* varibale pour les couleurs et pour le texte  */
+
+:root{
+  --blanc: #FFF;
+  --noir: #000;
+  --rouge_pale: #DD5B5B;
+  --fond_gris:rgb(211,211,211,0.4);
+  --gris:#606060;
+  --rose: #F25E75;
+}
+
+/* ------------------------------------------------------------- */
+
+/* reset css */
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* ------------------------------------------------------------- */
+
+body{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-size: 100%;
+  background-image: url(/image/DOS\ FENETRe.png);
+}
+
+body::before{
+  content: "";
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  font-family: 'Gentium Basic', serif;
+  z-index: -1;
+  background-color: var(--fond_gris);
+  /* filter: blur(2px); */
+}
+
+/* Navigation  */
+
+nav{
+  margin: 40px 150px 40px 40px; 
+  height: 100%;
+  font-size: 25px; 
+  font-weight: 700;
+}
+
+ul{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+ul li{
+  padding: 0 25px;
+}
+
+ul li a{
+  color: var(--rouge_pale);
+}
+
+ul li a:hover{
+  text-decoration: underline;
+}
+
+/* ------------------------------------------------------------- */
+
+/* le texte et les bouttons  */
+
+.text{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  margin-top: 250px;
+  text-shadow: var(--blanc) 1px 1px 1px;
+}
+
+.text h1{
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--rouge_pale);
+  padding: 10px;
+}
+
+.text p{
+  font-size: 35px;
+  font-weight: 700;
+  color: var(--noir);
+  padding: 10px;
+}
+
+.lecture{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 160px;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  background-color:var(--noir);
+  color: var(--rose);
+  border: var(--blanc) solid 3px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.text button:hover{
+  border: var(--rose) solid 3px;
+}
+
+.btn_container{
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 20px 0 20px;
+}
+
+.btn_down{
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blanc);
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb04 2s infinite;
+  animation: sdb04 2s infinite;
+  box-sizing: border-box;
+}
+
+.btn_down:hover{
+  background-color:var(--fond_gris);
+}
+
+@-webkit-keyframes sdb04 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+}
+
+@keyframes sdb04 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+}
+
+/* ------------------------------------------------------------- */

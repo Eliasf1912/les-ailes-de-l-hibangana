@@ -1,0 +1,396 @@
+/* lien pour la police  */
+
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic:wght@400;700&display=swap');
+
+/* ------------------------------------------------------------- */
+
+/* varibale pour les couleurs et pour le texte  */
+
+:root{
+  --blanc: #FFF;
+  --noir: #000;
+  --rouge_pale: #DD5B5B;
+  --fond_gris:rgb(211,211,211,0.4);
+  --noir_rgb:rgb(0,0,0,0.7);
+  --gris:#606060;
+  --rose: #F25E75;
+}
+
+/* ------------------------------------------------------------- */
+
+/* reset css */
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* ------------------------------------------------------------- */
+
+body{
+    font-family: 'Gentium Basic', serif;
+    width: 100%;
+    height: 100%;
+    background-color: var(--gris);
+}
+
+/* navigation */
+
+header{
+    background-image: url(/image/fond\ header.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    padding: 40px;
+    font-size: 30px; 
+    font-weight: 400;
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 70px;
+}
+
+nav ul li{
+    padding: 0 40px;
+}
+  
+nav ul li a{
+    color: var(--blanc);
+}
+  
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+/* ------------------------------------------------------------- */
+
+/* début slider */
+
+.Slider{
+    margin: 20px auto;
+    max-width: 1300px;
+    max-width: 100vh;
+    background-color: var(--blanc);
+}
+
+.Slider img{
+    max-width: 900;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+img.active{
+    display: block;
+    animation: fade 0.8s;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/* ------------------------------------------------------------- */
+
+/* footer */
+
+footer{
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--blanc);
+    /* border: solid var(--rouge_pale) 5px; */
+    /* border-radius: 15px; */
+    background-image: url(/image/fond\ header.PNG);
+    /* width: 500px; */
+}
+
+.btn_nav{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.home:hover{
+    background-color: var(--rouge_pale);
+}
+
+.btn_left{
+    margin:0 20px 0 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blanc);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.btn_left:hover{
+    background-color: var(--rouge_pale);
+}
+
+.btn_right{
+    margin:0 20px 0 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blanc);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.btn_right:hover{
+    background-color: var(--rouge_pale);
+}
+
+.big_screen{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.big_screen:hover{
+    background-color: var(--rouge_pale);
+}
+
+.btn_nav span{
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--blanc);
+}
+
+/* ------------------------------------------------------------- */
+
+/* nav pleine ecran */
+
+.nav_fullscreen{
+    margin: 0 auto;
+    background-color: var(--noir);
+    border-radius: 35px;
+    width: 400px;
+}
+
+/* ------------------------------------------------------------- */
+
+/* loader */
+
+.loader{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--gris);
+    z-index: 100;
+}
+
+.lettre{
+    color: var(--blanc);
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 20px;
+    animation: charge 1.2s linear infinite;
+}
+
+.lettre:nth-child(1){
+    animation-delay: 0.1s;
+}
+
+.lettre:nth-child(2){
+    animation-delay: 0.2s;
+}
+.lettre:nth-child(3){
+    animation-delay: 0.3s;
+}
+.lettre:nth-child(4){
+    animation-delay: 0.4s;
+}
+.lettre:nth-child(5){
+    animation-delay: 0.5s;
+}
+.lettre:nth-child(6){
+    animation-delay: 0.6s;
+}
+.lettre:nth-child(7){
+    animation-delay: 0.7s;
+}
+.lettre:nth-child(8){
+    animation-delay: 0.8s;
+}
+.lettre:nth-child(9){
+    animation-delay: 0.9s;
+}
+.lettre:nth-child(10){
+    animation-delay: 1.0s;
+}
+.lettre:nth-child(11){
+    animation-delay: 1.1s;
+}
+.lettre:nth-child(12){
+    animation-delay: 1.2s;
+}
+.lettre:nth-child(13){
+    animation-delay: 1.3s;
+}
+.lettre:nth-child(14){
+    animation-delay: 1.4s;
+}
+.lettre:nth-child(15){
+    animation-delay: 1.5s;
+}
+.lettre:nth-child(16){
+    animation-delay: 1.6s;
+}
+.lettre:nth-child(17){
+    animation-delay: 1.7s;
+}
+.lettre:nth-child(18){
+    animation-delay: 1.8s;
+}
+.lettre:nth-child(19){
+    animation-delay: 1.9s;
+}
+.lettre:nth-child(20){
+    animation-delay: 2.0s;
+}
+.lettre:nth-child(21){
+    animation-delay: 2.1s;
+}
+
+@keyframes charge {
+    0%{
+        color: var(--rose);
+        text-shadow: 0 0 7px var(--rose);
+    }
+    90%{
+        color: var(--blanc);
+        text-shadow: none;  
+    }
+    100%{
+        color: var(--rose);
+        text-shadow: 0 0 7px var(--rose); 
+    }
+}
+
+.fondu{
+    opacity: 0;
+    transition: opacity 0.4s ease-out; 
+}
+
+/* ------------------------------------------------------------- */
+
+/* boutton petit ecran   */
+
+.little_screen{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.little_screen:hover{
+    background-color: var(--rouge_pale);
+}
+
+.off{
+    display: none;
+}
+
+.offset{
+    opacity: 0;
+}
+
+/* ------------------------------------------------------------- */
+
+/* style fullscreen mode  */
+
+:fullscreen{
+    width: 100%;
+    height: 100vh;
+}
+:fullscreen nav{
+    display: none;
+}
+
+:fullscreen body{
+    background-color: var(--blanc);
+}
+
+:fullscreen footer{
+    background-color: var(--noir);
+    border-radius: 35px;
+    width: 400px;
+    background-image: none;
+    margin: 0 auto 50px auto; 
+}
+
+/* ------------------------------------------------------------- */
+
+/* le selecteur de page manuelle  */
+
+.home_select{
+    padding: 50px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: var(--noir_rgb);
+    top: 822px;
+    right: 0;
+    left: 0;
+}
+
+.home_select img{
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+}
+
+.home_2{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.home_2:hover{
+    background-color: var(--rouge_pale);
+}
+
+/* ------------------------------------------------------------- */
+
+
